@@ -80,6 +80,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
+            justify-content: center;
         }
         
         .logo-icon {
@@ -91,6 +92,7 @@
         .logo-text-container {
             display: flex;
             flex-direction: column;
+            text-align: center;
         }
         
         .logo-text {
@@ -167,6 +169,8 @@
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         
         .quick-option {
@@ -286,6 +290,64 @@
             opacity: 0.02;
             z-index: 5;
             pointer-events: none;
+        }
+        
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 2.5rem;
+            }
+            
+            .logo-subtitle {
+                font-size: 1rem;
+            }
+
+            .search-input {
+                font-size: 1rem;
+                padding: 1rem 1.2rem;
+            }
+            
+            .search-button {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .quick-option {
+                font-size: 0.85rem;
+                padding: 0.5rem 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 2rem;
+            }
+            
+            .logo-icon {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .search-input {
+                font-size: 0.9rem;
+                padding: 0.8rem 1rem;
+            }
+            
+            .search-button {
+                width: 36px;
+                height: 36px;
+            }
+
+            .quick-option {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .header-buttons {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
         }
     </style>
 </head>
